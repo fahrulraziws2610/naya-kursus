@@ -1,0 +1,77 @@
+.header{
+    background-color: rgb(233, 233, 233);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+.nav .a{
+    margin: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+.img{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+/* .klik{
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 8px;
+    display: flex;
+    position: static;
+    padding: 12px 12px; 
+    text-decoration: none;
+    margin: 12px 8px;
+    gap: 40%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .klikone{
+    text-decoration: none;
+    position: relative;
+  } */
+
+  .button1 {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: flex;
+    position: absolute;
+    right: 100px;
+    gap: 200px;
+    top: 30px;
+  }
+  .button2 {
+    background-color: #cdcdcd;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    gap: 200px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
