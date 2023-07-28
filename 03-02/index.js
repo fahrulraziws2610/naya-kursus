@@ -25,6 +25,6 @@ console.log(a + b)
 let d = 3
 let e = 4
 let hasil = d + e
-console.log(d)
-console.log(e)
-console.log("hasil dari 3 + 4 = " + hasil)
+console.log(d);
+console.log(e);
+console.log("hasil dari 3 + 4 = " + hasil);
