@@ -16,8 +16,6 @@ const persegi = luaspersegi()
 const luas = document.getElementById("hasilkali");
 const btn = document.getElementById("hitungperkalian");
 
-console.log(luas)
-
 btn.addEventListener("click", function() {
     const count = persegi();
     luas.textContent = count;
