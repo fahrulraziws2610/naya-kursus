@@ -2,26 +2,34 @@ const biodata = {
     firstName : "Fahrul",
     lastName : "Razi",
     age : 24,
-    address : "jogja",
-    hobi : {
-        outdor : ["Pantai", "gunung", "kota"],
-        indor : ["mall", "cafe", "stretfood"]
-    }
+    address : "jogja"
 }
 
 for (let index in biodata) {
     biodata.age = 50
     delete biodata.lastName
     console.log(biodata[index])
-    // console.log(biodata.hobi.outdor[1])
+}
+
+const newBio = {
+    ...biodata,
+    ttl : "121313",
+    hobi : {
+        outdor : ["Pantai", "gunung", "kota"],
+        indor : ["mall", "cafe", "stretfood"]
+    }
+}
+
+for (let index in newBio) {
+    console.log()
 }
 
 
 function checkjadwal(task) {
     if (task.hasOwnProperty('timework') && task.timework === '08.00') {
-      return true;
+      return `Ada Jadwal`;
     } else {
-      return false;
+      return 'tidak ada jadwal';
     }
   }
   
