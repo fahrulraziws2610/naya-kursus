@@ -1,3 +1,21 @@
+/*
+
+
+* non-blok
+* Promise:
+    - resolve => then
+    - reject => catch
+
+* Promise:
+    - async => bisa di await
+    - async => bisa di then -> catch
+
+
+*/
+
+
+
+
 // setTimeout(() => {
 //     console.log('1')
 // }, 3000);
@@ -16,29 +34,37 @@
 
 // console.log('2');
 
-
 const add = (x, y) => {
     return new Promise((resolve, reject) => {
-
-        if (x <= 0 || y <=0 ) {
-            reject('x atau y harus lebih dari 0')
-        }
-
         setTimeout(() => {
-            resolve(x + y);
+            if (x <= 0 || y <= 0) {
+                reject('x dan y harus melebihi 0')
+            }
+            resolve(x * y);
         }, 3000);
     });
 };
 
-    
+// const main = async () => {
 
-add(10, 6)
-.then((res) => {
-    console.log(res);
-})
-.catch((err) => {
-    console.log(err);
-})
+//     try {
+//         const res = await add(0, 1);
+//         console.log(res)
+//     } catch(error) {
+//         console.log('wadaw', error)
+//     }
+// };
 
-console.log('2')
+const main = async () => {
+    const res = await add(0, 1);
+    console.log(res)
+};
 
+main()
+// .then(() => {
+//     console.log('askdla')
+// })
+
+.catch(error => {
+    console.log('ecdmcdm', error);
+});
