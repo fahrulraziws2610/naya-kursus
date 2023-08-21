@@ -1,0 +1,137 @@
+body {
+    background: rgba(33, 32, 42, 0.8);
+      font: 100 14px sans-serif;
+      color: #000;
+      text-shadow: 0 1px 1px rgba(255,255,255,0.1);
+      text-align: center;	
+  }
+  ::-moz-selection {
+    background: rgba(0,0,0,0.1);
+  }
+  ::selection {
+    background: rgba(0,0,0,0.1);
+  }
+  h1 {
+    font-weight: 100;
+    font-size: 2.7em;
+  }
+  h3 {
+    color: #111222;
+    font-size: 1.6em;
+  }
+  a {
+    color: RoyalBlue;
+    font-weight: normal;
+    text-decoration: none;
+  }
+  a:hover {
+    color: CornflowerBlue;
+  }
+  
+  /* Circle Avatar Styles */
+  
+  .circle {
+      line-height: 0;		/* remove line-height */ 
+      display: inline-block;	/* circle wraps image */
+      margin: 5px;
+    border: 4px solid rgba(200,200,200,0.4);
+      border-radius: 50%;	/* relative value */
+      /*box-shadow: 0px 0px 5px rgba(0,0,0,0.4);*/
+      transition: linear 0.25s;
+    height: 128px;
+    width: 128px;
+  }
+  .circle img {
+      border-radius: 50%;	/* relative value for
+                     adjustable image size */
+  }
+  .circle:hover {
+      transition: ease-out 0.2s;
+    border: 4px solid rgba(0,0,0,0.2);
+    -webkit-transition: ease-out 0.2s;
+  }
+  a.circle {
+    color: transparent;
+  }
+
+  form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  label{
+    text-align: left;
+    color: #ffffff;
+  }
+  
+  /* Full-width inputs */
+  input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    border-radius: 10px;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
