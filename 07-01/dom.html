@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        /* CSS untuk styling tabel */
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-    <script src="dom.js"></script>
+    <h2>Membuat Tabel Keluaran dengan JavaScript</h2>
+    <input type="text" id="jumlahBaris" placeholder="Masukkan jumlah baris">
+    <input type="text" id="jumlahKolom" placeholder="Masukkan jumlah kolom">
+    <button onclick="buatTabel()">Buat Tabel</button>
+
+    <div id="tabelContainer"></div>
+
+    <script>
+        function buatTabel() {
+            var jumlahBaris = document.getElementById("jumlahBaris").value;
+            var jumlahKolom = document.getElementById("jumlahKolom").value;
+
+            var tabelHTML = '<table><thead><tr>';
+
+            for (var i = 1; i <= jumlahKolom; i++) {
+                tabelHTML += '<th>Kolom ' + i + '</th>';
+                console.log('tes',i)
+            }
+
+            tabelHTML += '</tr></thead><tbody>';
+
+            for (var j = 1; j <= jumlahBaris; j++) {
+                tabelHTML += '<tr>';
+                console.log('tes',i)
+
+                for (var k = 1; k <= jumlahKolom; k++) {
+                    tabelHTML += '<td>Baris ' + j + ', Kolom ' + k + '</td>';
+                console.log('tes',i)
+
+                }
+                tabelHTML += '</tr>';//
+            }
+
+            tabelHTML += '</tbody></table>';
+
+            document.getElementById("tabelContainer").innerHTML = tabelHTML;
+        }
+    </script>
 </body>
 </html>
