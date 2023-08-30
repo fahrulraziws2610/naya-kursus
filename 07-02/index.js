@@ -71,12 +71,14 @@
 const btn = document.querySelector('#addButton')
 
 btn.addEventListener('click', function() {
-    let namabarang = document.querySelector('#namaBarang').value;
+
+    const namabarang = document.querySelector('#namaBarang').value;
     const jumlahbarang = document.querySelector('#jumlahBarang').value;
     const price = document.querySelector('#harga').value;
     console.log(namabarang, jumlahbarang, price)
 
-    const table = document.querySelector('#dataTable');
+    if (namabarang == "" && jumlahbarang == "" && price == "") {
+        const table = document.querySelector('#dataTable');
     const row = document.createElement('tr');
 
     const c1 = document.createElement('td');
@@ -91,6 +93,7 @@ btn.addEventListener('click', function() {
     row.appendChild(c1)
     row.appendChild(c2)
     row.appendChild(c3)
-    
     table.appendChild(row);
+    
+    }
 });
